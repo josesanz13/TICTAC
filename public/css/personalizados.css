@@ -1,0 +1,64 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: f2f2f2;
+}
+.pst{
+    height: 125px;
+    max-height: 125px;
+    width: 177px;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.pst:not(.activado):hover{
+    background-color: #a0aec0;
+}
+.pst.activado.uno{
+    background-color: #6d97cc;
+}
+.pst.activado.dos{
+    background-color: #827ee8;
+}
+.pst.finalizado{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.pst:not(.activado).finalizado:hover{
+    background-color: #ccc;
+}
+
+.equis{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.equis:after{
+    position: relative;
+    content: "\x";
+    font-size: 150px;
+    color: black;
+    font-weight: bold;
+    top: -80px;
+    left: -1px;
+}
+
+.circulo{
+    height: 100px;
+    width: 100px;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.circulo:after{
+    position: relative;
+    content: "\O";
+    font-size: 125px;
+    color: black;
+    font-weight: bold;
+    top: -45px;
+    left: -7px;
+}
